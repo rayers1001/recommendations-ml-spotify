@@ -69,7 +69,6 @@ class SpotifyCollector:
                 'spotify_id': track_data['track_id'],
                 'name': track_data['name'],
                 'artist': track_data['artist'],
-                'popularity': track_data['popularity'],
                 'duration_ms': track_data['duration_ms']
             }
             result = self.supabase.table('tracks').insert(track).execute()
@@ -133,7 +132,6 @@ class SpotifyCollector:
                 'track_id': track['id'],
                 'name': track['name'],
                 'artist': track['artists'][0]['name'],
-                'popularity': track['popularity'],
                 'duration_ms': track['duration_ms']
             }
             
