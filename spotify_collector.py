@@ -13,13 +13,22 @@ class SpotifyCollector:
         """
         Initialize Spotify and Supabase clients
         """
-        # Spotify setup with expanded scope
-        self.sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-            client_id=os.getenv('SPOTIPY_CLIENT_ID'),
-            client_secret=os.getenv('SPOTIPY_CLIENT_SECRET'),
-            redirect_uri=os.getenv('SPOTIPY_REDIRECT_URI'),
-            scope="user-library-read user-read-recently-played playlist-modify-public user-read-private user-read-playback-state user-read-currently-playing"
-        ))
+        # Spotify setup with required scope
+        scope = " ".join([
+            "user-read-recently-played",
+            "user-read-currently-playing",
+            "user-top-read",
+            "user-library-read",
+            "user-read-private",
+        ])
+        
+        self.sp = spotipy.Spotify(
+            auth_manager=SpotifyOAuth(
+                scope=scope,
+                redirect_uri="http://127.0.0.1:8888/callback",
+                open_browser=True
+            )
+        )
         
         # Supabase setup
         supabase_url = os.getenv('SUPABASE_URL')
@@ -46,24 +55,27 @@ class SpotifyCollector:
             return result.data[0]['id']
 
     def store_track(self, track_data):
-        """Store track and its features in database"""
-        # Store basic track info
-        track = {
-            'spotify_id': track_data['track_id'],
-            'name': track_data['name'],
-            'artist': track_data['artist'],
-            'popularity': track_data['popularity'],
-            'duration_ms': track_data['duration_ms']
-        }
-        result = self.supabase.table('tracks').upsert(track).execute()
-        track_id = result.data[0]['id']
-
-        # Store audio features
-        if track_data.get('audio_features'):
-            features = track_data['audio_features']
-            features['track_id'] = track_id
-            self.supabase.table('track_features').upsert(features).execute()
-
+        """Store track in database if not exists, return track_id"""
+        # Check if track exists
+        result = self.supabase.table('tracks').select('id').eq('spotify_id', track_data['track_id']).execute()
+        
+        if result.data:
+            # Track exists, return existing id
+            track_id = result.data[0]['id']
+            print(f"Track already exists, using ID: {track_id}")
+        else:
+            # Track doesn't exist, insert new
+            track = {
+                'spotify_id': track_data['track_id'],
+                'name': track_data['name'],
+                'artist': track_data['artist'],
+                'popularity': track_data['popularity'],
+                'duration_ms': track_data['duration_ms']
+            }
+            result = self.supabase.table('tracks').insert(track).execute()
+            track_id = result.data[0]['id']
+            print(f"Created new track with ID: {track_id}")
+        
         return track_id
 
     def update_play_count(self, user_id, track_id, played_at):
@@ -97,21 +109,24 @@ class SpotifyCollector:
             return "Created new listening record"
 
     def collect_and_process_data(self, limit=50):
-        """Collect tracks and store in Supabase"""
+        """
+        Collect tracks and store in Supabase
+        """
         print("Fetching user data...")
         user_id = self.store_user()
-        print(f"User ID: {user_id}")
 
-        print("Fetching recent tracks...")
+        print("\nFetching recent tracks...")
         results = self.sp.current_user_recently_played(limit=limit)
-        print(f"Found {len(results['items'])} tracks")
-        
+        tracks = results['items']
+        print(f"Found {len(tracks)} tracks")
+
+        # Process each track
         new_tracks = 0
-        play_count_updates = 0
+        updated_tracks = 0
         
-        for item in results['items']:
+        for item in tracks:
             track = item['track']
-            print(f"\nProcessing track: {track['name']} by {track['artists'][0]['name']}")
+            print(f"\nProcessing: {track['name']} by {track['artists'][0]['name']}")
             
             # Prepare track data
             track_data = {
@@ -123,23 +138,18 @@ class SpotifyCollector:
             }
             
             try:
-                # Store track and get track_id
                 track_id = self.store_track(track_data)
-                if track_id:
-                    # Update listening history and play count
-                    result = self.update_play_count(user_id, track_id, item['played_at'])
-                    if "Updated" in result:
-                        play_count_updates += 1
-                    else:
-                        new_tracks += 1
-                    print(result)
-                
+                result = self.update_play_count(user_id, track_id, item['played_at'])
+                if "Updated" in result:
+                    updated_tracks += 1
+                else:
+                    new_tracks += 1
             except Exception as e:
-                print(f"Error processing track {track['name']}: {str(e)}")
+                print(f"Error processing track: {str(e)}")
 
         print(f"\nProcess complete!")
         print(f"New tracks: {new_tracks}")
-        print(f"Play count updates: {play_count_updates}")
+        print(f"Updated tracks: {updated_tracks}")
 
 if __name__ == "__main__":
     print("Initializing collector...")
