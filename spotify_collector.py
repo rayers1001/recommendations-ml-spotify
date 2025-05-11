@@ -148,6 +148,7 @@ class SpotifyCollector:
         print(f"\nProcess complete!")
         print(f"New tracks: {new_tracks}")
         print(f"Updated tracks: {updated_tracks}")
+        return (new_tracks, updated_tracks)
 
 if __name__ == "__main__":
     print("Initializing collector...")
