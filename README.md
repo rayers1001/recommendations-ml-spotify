@@ -102,10 +102,8 @@ python playlist_creator.py --add SPOTIFY_TRACK_ID
 ## Future Enhancements
 
 - Custom machine learning model for recommendations
-- User feedback collection (likes, skips)
+- User feedback collection (likes, skips, play-throughs)
 - Automated scheduled updates
-- Web interface for managing recommendations
-- Mobile app integration
 
 ## Database Schema
 
@@ -116,11 +114,3 @@ The system uses the following database tables:
 - `listening_history`: Records user listening activity with play counts
 - `recommendations`: Stores recommended tracks for each user
 - `user_feedback`: Stores user interaction with recommendations
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve the project.
-
-## License
-
-[MIT License](LICENSE) 
