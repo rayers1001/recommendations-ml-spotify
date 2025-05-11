@@ -104,6 +104,7 @@ python playlist_creator.py --add SPOTIFY_TRACK_ID
 - Custom machine learning model for recommendations
 - User feedback collection (likes, skips, play-throughs)
 - Automated scheduled updates
+- Multiple user account support
 
 ## Database Schema
 
