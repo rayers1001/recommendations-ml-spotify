@@ -373,6 +373,28 @@ class PlaylistCreator:
             traceback.print_exc()
             return False
 
+    def update_recommendation_playlist_with_lastfm(self):
+        """Update the recommendation playlist using Last.fm metadata"""
+        from recommendations_creator import LastFmRecommender
+        
+        # Create LastFmRecommender instance
+        recommender = LastFmRecommender()
+        
+        # Generate recommendations
+        print("Generating recommendations...")
+        recommender.generate_recommendations(count=30)
+        
+        # Update the playlist
+        print("\nUpdating playlist...")
+        success = recommender.update_playlist()
+        
+        # Set the cover image
+        if success:
+            playlist_id = self.get_or_create_playlist()
+            self.set_cover_image(playlist_id)
+        
+        return success
+
 if __name__ == "__main__":
     import argparse
     

@@ -1,117 +1,157 @@
 # Randy's AI Music Recommendations
 
-AI-powered music recommendation system for Spotify that creates personalized playlists based on listening history.
+An AI-powered music recommendation system that uses Spotify listening history and Last.fm metadata to create personalized playlists.
 
 ## Overview
 
-This project creates a personalized Spotify playlist that updates with new music recommendations that match your listening habits. It collects your listening history, uses it to generate recommendations, and automatically creates a playlist in your Spotify account.
+This project collects your Spotify listening history, enriches it with metadata from Last.fm, and uses machine learning techniques to generate personalized music recommendations. These recommendations are automatically added to a Spotify playlist called "Randy's AI Recommendations".
 
-## Features
+## System Architecture
 
-- Collects your Spotify listening history
-- Generates recommendations using Spotify's API (will be replaced with ML model)
-- Creates and maintains a "Randy's AI Recommendations" playlist in your Spotify account
-- Updates recommendations periodically
-- Custom playlist cover image
+The system consists of four main components:
 
-## System Components
+1. **Data Collection** (`spotify_collector.py`): Collects your Spotify listening history and stores it in a Supabase database.
+2. **Metadata Enrichment** (`lastfm_collector.py`): Fetches additional metadata (tags, similar tracks) from Last.fm for each track.
+3. **Recommendation Generation** (`recommendations_creator.py`): Analyzes your listening patterns and Last.fm metadata to generate personalized recommendations.
+4. **Playlist Management** (`playlist_creator.py`): Creates and updates a Spotify playlist with your recommendations.
 
-1. **Data Collection** (`spotify_collector.py`)
-   - Authenticates with Spotify API
-   - Retrieves user's recently played tracks
-   - Stores track info and listening history in database
-   - Updates play counts for repeat listens
+## Database Structure
 
-2. **Recommendation Engine** (`sample_recommendations.py`)
-   - Generates track recommendations based on listening data
-   - Uses Spotify's recommendation algorithm (temporary)
-   - Will be replaced with custom ML model in the future
+The system uses a Supabase database with the following tables:
 
-3. **Playlist Manager** (`playlist_creator.py`)
-   - Creates/updates "Randy's AI Recommendations" playlist
-   - Pulls recommended tracks from database
-   - Sets custom playlist cover image
+- **users**: Stores user information
+  - `id`: Primary key
+  - `spotify_id`: Spotify user ID
+  - `display_name`: User's display name
+
+- **tracks**: Stores track information
+  - `id`: Primary key
+  - `spotify_id`: Spotify track ID
+  - `name`: Track name
+  - `artist`: Artist name
+  - `duration_ms`: Track duration in milliseconds
+
+- **listening_history**: Records user listening history
+  - `id`: Primary key
+  - `user_id`: Reference to users table
+  - `track_id`: Reference to tracks table
+  - `play_count`: Number of times the track was played
+  - `first_played_at`: First time the track was played
+  - `last_played_at`: Last time the track was played
+
+- **track_metadata**: Stores Last.fm metadata for tracks
+  - `id`: Primary key
+  - `track_id`: Reference to tracks table
+  - `listeners`: Number of Last.fm listeners
+  - `playcount`: Number of Last.fm plays
+  - `tags`: Array of genre/style tags
+  - `similar_tracks`: Array of similar track names
+  - `wiki_summary`: Track description from Last.fm
+  - `updated_at`: Last metadata update timestamp
+
+- **recommendations**: Stores generated recommendations
+  - `id`: Primary key
+  - `user_id`: Reference to users table
+  - `track_id`: Reference to tracks table
+  - `added_at`: When the recommendation was generated
+  - `rating`: Confidence score for the recommendation
+  - `source`: Source of the recommendation
+  - `is_played`: Whether the user has played the recommendation
+  - `user_feedback`: User feedback on the recommendation
 
 ## Setup
 
 ### Prerequisites
 
-- Python 3.7+
-- Spotify account
-- Spotify Developer account (for API access)
-- Supabase account (for database)
+- Python 3.6+
+- Spotify Developer Account
+- Last.fm API Key
+- Supabase Account
+
+### Environment Variables
+
+Create a `.env` file with the following variables:
+
+```
+SPOTIPY_CLIENT_ID=your_spotify_client_id
+SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
+SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+LASTFM_API_KEY=your_lastfm_api_key
+```
 
 ### Installation
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/rayers1001/recommendations-ml-spotify.git
-   cd recommendations-ml-spotify
+1. Clone this repository
+2. Install dependencies:
    ```
-
-2. Install dependencies
-   ```bash
-   pip install spotipy python-dotenv supabase pillow
+   pip install spotipy python-dotenv supabase requests
    ```
+3. Set up your Supabase database with the required tables
 
-3. Set up Spotify API credentials
-   - Create an app at [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
-   - Set redirect URI to `http://127.0.0.1:8888/callback`
-   - Note your Client ID and Client Secret
+## Usage
 
-4. Set up Supabase
-   - Create a new project at [Supabase](https://supabase.com/)
-   - Run the database schema in `database/schema.sql`
-   - Note your Supabase URL and API key
+### Running the Full Process
 
-5. Create a `.env` file with your credentials
-   ```
-   SPOTIPY_CLIENT_ID=your_spotify_client_id
-   SPOTIPY_CLIENT_SECRET=your_spotify_client_secret
-   SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback
-   SUPABASE_URL=your_supabase_url
-   SUPABASE_KEY=your_supabase_api_key
-   ```
+To run the entire recommendation process, use:
 
-6. Add a custom image for the playlist
-   - Place your image in the `images/` directory
-   - Name it `cover.jpg`
-
-### Usage
-
-1. Collect listening data
-   ```bash
-   python spotify_collector.py
-   ```
-
-2. Generate recommendations
-   ```bash
-   python sample_recommendations.py
-   ```
-
-3. Create/update your playlist
-   ```bash
-   python playlist_creator.py
-   ```
-
-You can also add a track directly to recommendations:
-```bash
-python playlist_creator.py --add SPOTIFY_TRACK_ID
 ```
+python run_recommendation_process.py
+```
+
+This will:
+1. Collect your Spotify listening history
+2. Fetch Last.fm metadata for your tracks
+3. Generate personalized recommendations
+4. Update your "Randy's AI Recommendations" playlist
+
+### Running Individual Components
+
+You can also run each component separately:
+
+```
+# Collect Spotify listening history
+python spotify_collector.py
+
+# Collect Last.fm metadata
+python lastfm_collector.py
+
+# Generate recommendations
+python recommendations_creator.py
+
+# Update playlist
+python -c "from playlist_creator import PlaylistCreator; creator = PlaylistCreator(); creator.update_recommendation_playlist_with_lastfm()"
+```
+
+## How It Works
+
+### Data Collection
+
+The system collects your recently played tracks from Spotify and stores them in the database, tracking play counts and timestamps.
+
+### Metadata Enrichment
+
+For each track in your listening history, the system fetches additional metadata from Last.fm:
+- Genre and style tags
+- Similar tracks
+- Listener counts and popularity
+- Track descriptions
+
+### Recommendation Generation
+
+The recommendation engine uses several strategies:
+1. **Tag-Based Recommendations**: Identifies your favorite music tags and finds tracks with similar tags
+2. **Similar Track Recommendations**: Uses Last.fm's "similar tracks" data to find new music
+3. **Top Tracks**: Falls back to your top tracks if other methods don't yield enough recommendations
+
+### Playlist Management
+
+The system creates and maintains a Spotify playlist called "Randy's AI Recommendations" with your personalized track selections.
 
 ## Future Enhancements
 
-- Custom machine learning model for recommendations
-- User feedback collection (likes, skips, play-throughs)
-- Automated scheduled updates
-- Multiple user account support
-
-## Database Schema
-
-The system uses the following database tables:
-
-- `users`: Stores user information
-- `tracks`: Stores track metadata
-- `listening_history`: Records user listening activity with play counts
-- `recommendations`: Stores recommended tracks for each user
-- `user_feedback`: Stores user interaction with recommendations
+- Implement more sophisticated machine learning models
+- Add user feedback mechanisms to improve recommendations
+- Develop a web interface for configuration and analytics
+- Support for multiple user accounts

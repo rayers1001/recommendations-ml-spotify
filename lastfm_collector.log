@@ -1,0 +1,634 @@
+2025-05-11 18:06:40,481 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=id&limit=1 "HTTP/2 404 Not Found"
+2025-05-11 18:06:40,482 - INFO - Creating track_metadata table
+2025-05-11 18:06:40,565 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/rpc/exec_sql "HTTP/2 404 Not Found"
+2025-05-11 18:23:37,998 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=id&limit=1 "HTTP/2 200 OK"
+2025-05-11 18:23:38,004 - INFO - track_metadata table exists
+2025-05-11 18:23:38,004 - INFO - Starting metadata collection
+2025-05-11 18:23:38,148 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/rpc/exec_sql "HTTP/2 404 Not Found"
+2025-05-11 18:26:21,397 - INFO - Starting metadata collection
+2025-05-11 18:26:21,764 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/rpc/exec_sql "HTTP/2 404 Not Found"
+2025-05-11 18:28:48,591 - INFO - Starting metadata collection
+2025-05-11 18:28:48,849 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/rpc/exec_sql "HTTP/2 404 Not Found"
+2025-05-11 18:29:59,850 - INFO - Starting metadata collection
+2025-05-11 18:30:00,019 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/rpc/exec_sql "HTTP/2 404 Not Found"
+2025-05-11 18:40:13,905 - INFO - Starting metadata collection
+2025-05-11 18:40:14,226 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/tracks?select=id%2Cname%2Cartist "HTTP/2 200 OK"
+2025-05-11 18:40:14,369 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=track_id "HTTP/2 200 OK"
+2025-05-11 18:40:14,370 - INFO - Found 50 tracks needing metadata
+2025-05-11 18:40:14,371 - INFO - Collecting metadata for 50 tracks
+2025-05-11 18:40:14,371 - INFO - Processing track: Hide My Gun (Feat. HARDY) by Post Malone
+2025-05-11 18:40:15,374 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:15,378 - INFO - Stored metadata for Hide My Gun (Feat. HARDY) by Post Malone
+2025-05-11 18:40:16,383 - INFO - Processing track: Narcissist by Avery Anna
+2025-05-11 18:40:16,838 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:16,840 - INFO - Stored metadata for Narcissist by Avery Anna
+2025-05-11 18:40:17,845 - INFO - Processing track: Nosedive (Feat. Lainey Wilson) by Post Malone
+2025-05-11 18:40:18,184 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:18,185 - INFO - Stored metadata for Nosedive (Feat. Lainey Wilson) by Post Malone
+2025-05-11 18:40:19,190 - INFO - Processing track: Intoxicated by Warren Zeiders
+2025-05-11 18:40:19,564 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:19,564 - INFO - Stored metadata for Intoxicated by Warren Zeiders
+2025-05-11 18:40:20,570 - INFO - Processing track: I'm The Problem by Morgan Wallen
+2025-05-11 18:40:20,968 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:20,971 - INFO - Stored metadata for I'm The Problem by Morgan Wallen
+2025-05-11 18:40:21,972 - INFO - Processing track: I Had Some Help (Feat. Morgan Wallen) by Post Malone
+2025-05-11 18:40:22,269 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:22,271 - INFO - Stored metadata for I Had Some Help (Feat. Morgan Wallen) by Post Malone
+2025-05-11 18:40:23,276 - INFO - Processing track: I Will (When You Do) [feat. Dylan Marlowe] by Avery Anna
+2025-05-11 18:40:23,607 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:23,609 - INFO - Stored metadata for I Will (When You Do) [feat. Dylan Marlowe] by Avery Anna
+2025-05-11 18:40:24,614 - INFO - Processing track: Motorcycle Drive By by Zach Bryan
+2025-05-11 18:40:24,922 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:24,924 - INFO - Stored metadata for Motorcycle Drive By by Zach Bryan
+2025-05-11 18:40:25,928 - INFO - Processing track: Highway by Shaboozey
+2025-05-11 18:40:26,251 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:26,252 - INFO - Stored metadata for Highway by Shaboozey
+2025-05-11 18:40:27,254 - INFO - Processing track: My Fault (feat. Noah Cyrus) by Shaboozey
+2025-05-11 18:40:27,602 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:27,604 - INFO - Stored metadata for My Fault (feat. Noah Cyrus) by Shaboozey
+2025-05-11 18:40:28,608 - INFO - Processing track: Love Somebody by Morgan Wallen
+2025-05-11 18:40:28,980 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:28,981 - INFO - Stored metadata for Love Somebody by Morgan Wallen
+2025-05-11 18:40:29,986 - INFO - Processing track: Wanna Be Loved by The Red Clay Strays
+2025-05-11 18:40:30,460 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:30,462 - INFO - Stored metadata for Wanna Be Loved by The Red Clay Strays
+2025-05-11 18:40:31,468 - INFO - Processing track: God Needs The Devil by Jonah Kagen
+2025-05-11 18:40:31,794 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:31,795 - INFO - Stored metadata for God Needs The Devil by Jonah Kagen
+2025-05-11 18:40:32,800 - INFO - Processing track: Somethin’ ‘Bout A Woman (feat. Teddy Swims) by Thomas Rhett
+2025-05-11 18:40:33,099 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:33,101 - INFO - Stored metadata for Somethin’ ‘Bout A Woman (feat. Teddy Swims) by Thomas Rhett
+2025-05-11 18:40:34,105 - INFO - Processing track: Surefire by Wilderado
+2025-05-11 18:40:34,733 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:34,735 - INFO - Stored metadata for Surefire by Wilderado
+2025-05-11 18:40:35,737 - INFO - Processing track: Ice Cream Woman by White Panda
+2025-05-11 18:40:36,067 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:36,069 - INFO - Stored metadata for Ice Cream Woman by White Panda
+2025-05-11 18:40:37,070 - INFO - Processing track: Love Me Back by Max McNown
+2025-05-11 18:40:37,609 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:37,611 - INFO - Stored metadata for Love Me Back by Max McNown
+2025-05-11 18:40:38,616 - INFO - Processing track: Pacific Coast Highway (with Trevor Hall) - Reggae Remix by The Hip Abduction
+2025-05-11 18:40:38,939 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:38,940 - INFO - Stored metadata for Pacific Coast Highway (with Trevor Hall) - Reggae Remix by The Hip Abduction
+2025-05-11 18:40:39,946 - INFO - Processing track: Just Like Johnny by Redferrin
+2025-05-11 18:40:40,419 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:40,421 - INFO - Stored metadata for Just Like Johnny by Redferrin
+2025-05-11 18:40:41,426 - INFO - Processing track: Ain't No Love In Oklahoma (From Twisters: The Album) by Luke Combs
+2025-05-11 18:40:41,687 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:41,688 - INFO - Stored metadata for Ain't No Love In Oklahoma (From Twisters: The Album) by Luke Combs
+2025-05-11 18:40:42,693 - INFO - Processing track: Vegas - A COLORS SHOW by Shaboozey
+2025-05-11 18:40:43,025 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:43,026 - INFO - Stored metadata for Vegas - A COLORS SHOW by Shaboozey
+2025-05-11 18:40:44,031 - INFO - Processing track: Firefly by White Panda
+2025-05-11 18:40:44,390 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:44,395 - INFO - Stored metadata for Firefly by White Panda
+2025-05-11 18:40:45,400 - INFO - Processing track: Contagious by Night Riots
+2025-05-11 18:40:45,739 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:45,739 - INFO - Stored metadata for Contagious by Night Riots
+2025-05-11 18:40:46,744 - INFO - Processing track: Indigo (feat. Avery Anna) by Sam Barber
+2025-05-11 18:40:47,114 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:47,114 - INFO - Stored metadata for Indigo (feat. Avery Anna) by Sam Barber
+2025-05-11 18:40:48,120 - INFO - Processing track: Better Me For You (Brown Eyes) by Max McNown
+2025-05-11 18:40:48,378 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:48,380 - INFO - Stored metadata for Better Me For You (Brown Eyes) by Max McNown
+2025-05-11 18:40:49,385 - INFO - Processing track: The Door - CYRIL Remix by Teddy Swims
+2025-05-11 18:40:49,719 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:49,720 - INFO - Stored metadata for The Door - CYRIL Remix by Teddy Swims
+2025-05-11 18:40:50,725 - INFO - Processing track: Sunshine (My Girl) by Wuki
+2025-05-11 18:40:51,055 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:51,057 - INFO - Stored metadata for Sunshine (My Girl) by Wuki
+2025-05-11 18:40:52,059 - INFO - Processing track: Somedays by Sonny Fodera
+2025-05-11 18:40:52,694 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:52,694 - INFO - Stored metadata for Somedays by Sonny Fodera
+2025-05-11 18:40:53,699 - INFO - Processing track: Shiver by John Summit
+2025-05-11 18:40:54,160 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:54,162 - INFO - Stored metadata for Shiver by John Summit
+2025-05-11 18:40:55,166 - INFO - Processing track: Black Friday (pretty like the sun) by Lost Frequencies
+2025-05-11 18:40:55,525 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:55,527 - INFO - Stored metadata for Black Friday (pretty like the sun) by Lost Frequencies
+2025-05-11 18:40:56,527 - INFO - Processing track: Dancing in the Moonlight (feat. NEIMY) by Jubël
+2025-05-11 18:40:56,876 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:56,880 - INFO - Stored metadata for Dancing in the Moonlight (feat. NEIMY) by Jubël
+2025-05-11 18:40:57,881 - INFO - Processing track: These Words by Badger
+2025-05-11 18:40:58,291 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:58,292 - INFO - Stored metadata for These Words by Badger
+2025-05-11 18:40:59,297 - INFO - Processing track: Addicted by Zerb
+2025-05-11 18:40:59,627 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:40:59,627 - INFO - Stored metadata for Addicted by Zerb
+2025-05-11 18:41:00,633 - INFO - Processing track: 10:35 by Tiësto
+2025-05-11 18:41:00,929 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:00,931 - INFO - Stored metadata for 10:35 by Tiësto
+2025-05-11 18:41:01,936 - INFO - Processing track: For Life (feat. Nile Rodgers) by Kygo
+2025-05-11 18:41:02,338 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:02,339 - INFO - Stored metadata for For Life (feat. Nile Rodgers) by Kygo
+2025-05-11 18:41:03,344 - INFO - Processing track: I Like It (with Nate Smith) by Alesso
+2025-05-11 18:41:03,930 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:03,932 - INFO - Stored metadata for I Like It (with Nate Smith) by Alesso
+2025-05-11 18:41:04,937 - INFO - Processing track: St. Helens Alpenglow by Max McNown
+2025-05-11 18:41:05,340 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:05,342 - INFO - Stored metadata for St. Helens Alpenglow by Max McNown
+2025-05-11 18:41:06,346 - INFO - Processing track: Blue Strips by Jessie Murph
+2025-05-11 18:41:06,642 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:06,644 - INFO - Stored metadata for Blue Strips by Jessie Murph
+2025-05-11 18:41:07,648 - INFO - Processing track: Blink Twice by Shaboozey
+2025-05-11 18:41:08,164 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:08,166 - INFO - Stored metadata for Blink Twice by Shaboozey
+2025-05-11 18:41:09,169 - INFO - Processing track: Snow on The Bluff by Evening Elephants
+2025-05-11 18:41:09,509 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:09,511 - INFO - Stored metadata for Snow on The Bluff by Evening Elephants
+2025-05-11 18:41:10,516 - INFO - Processing track: Sweet Disposition by The Temper Trap
+2025-05-11 18:41:10,852 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:10,853 - INFO - Stored metadata for Sweet Disposition by The Temper Trap
+2025-05-11 18:41:11,858 - INFO - Processing track: Mrs. Hollywood by Go-Jo
+2025-05-11 18:41:12,465 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:12,466 - INFO - Stored metadata for Mrs. Hollywood by Go-Jo
+2025-05-11 18:41:13,471 - INFO - Processing track: Ghost Town by AMAG
+2025-05-11 18:41:13,833 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:13,834 - INFO - Stored metadata for Ghost Town by AMAG
+2025-05-11 18:41:14,839 - INFO - Processing track: Levels - Radio Edit by Avicii
+2025-05-11 18:41:15,148 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:15,148 - INFO - Stored metadata for Levels - Radio Edit by Avicii
+2025-05-11 18:41:16,153 - INFO - Processing track: Just In Case by Morgan Wallen
+2025-05-11 18:41:16,404 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:16,405 - INFO - Stored metadata for Just In Case by Morgan Wallen
+2025-05-11 18:41:17,410 - INFO - Processing track: Worst Way by Riley Green
+2025-05-11 18:41:17,744 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:17,744 - INFO - Stored metadata for Worst Way by Riley Green
+2025-05-11 18:41:18,748 - INFO - Processing track: LOW ROAD (feat. Avery Anna) by Adrien Nunez
+2025-05-11 18:41:19,229 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:19,230 - INFO - Stored metadata for LOW ROAD (feat. Avery Anna) by Adrien Nunez
+2025-05-11 18:41:20,233 - INFO - Processing track: I Ain't Comin' Back (feat. Post Malone) by Morgan Wallen
+2025-05-11 18:41:20,486 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:20,488 - INFO - Stored metadata for I Ain't Comin' Back (feat. Post Malone) by Morgan Wallen
+2025-05-11 18:41:21,489 - INFO - Processing track: 4×4×U by Lainey Wilson
+2025-05-11 18:41:21,797 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:21,799 - INFO - Stored metadata for 4×4×U by Lainey Wilson
+2025-05-11 18:41:22,801 - INFO - Processing track: House Again by Hudson Westbrook
+2025-05-11 18:41:23,144 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:23,146 - INFO - Stored metadata for House Again by Hudson Westbrook
+2025-05-11 18:41:24,151 - INFO - Completed metadata collection. Processed 50 tracks.
+2025-05-11 18:41:24,592 - INFO - Starting metadata collection
+2025-05-11 18:41:24,754 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/tracks?select=id%2Cname%2Cartist "HTTP/2 200 OK"
+2025-05-11 18:41:24,844 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=track_id "HTTP/2 200 OK"
+2025-05-11 18:41:24,846 - INFO - Found 50 tracks needing metadata
+2025-05-11 18:41:24,846 - INFO - Collecting metadata for 50 tracks
+2025-05-11 18:41:24,846 - INFO - Processing track: Backup Plan (feat. Luke Combs) by Bailey Zimmerman
+2025-05-11 18:41:25,155 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:25,159 - INFO - Stored metadata for Backup Plan (feat. Luke Combs) by Bailey Zimmerman
+2025-05-11 18:41:26,163 - INFO - Processing track: Baggage by Kelsea Ballerini
+2025-05-11 18:41:26,537 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:26,539 - INFO - Stored metadata for Baggage by Kelsea Ballerini
+2025-05-11 18:41:27,545 - INFO - Processing track: Guy For That (Feat. Luke Combs) by Post Malone
+2025-05-11 18:41:27,892 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:27,893 - INFO - Stored metadata for Guy For That (Feat. Luke Combs) by Post Malone
+2025-05-11 18:41:28,898 - INFO - Processing track: Brunette by Tucker Wetmore
+2025-05-11 18:41:29,223 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:29,225 - INFO - Stored metadata for Brunette by Tucker Wetmore
+2025-05-11 18:41:30,225 - INFO - Processing track: All The Way (feat. Bailey Zimmerman) by BigXthaPlug
+2025-05-11 18:41:30,569 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:30,573 - INFO - Stored metadata for All The Way (feat. Bailey Zimmerman) by BigXthaPlug
+2025-05-11 18:41:31,579 - INFO - Processing track: weren't for the wind by Ella Langley
+2025-05-11 18:41:31,829 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:31,830 - INFO - Stored metadata for weren't for the wind by Ella Langley
+2025-05-11 18:41:32,831 - INFO - Processing track: Bar None by Jordan Davis
+2025-05-11 18:41:33,166 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:33,167 - INFO - Stored metadata for Bar None by Jordan Davis
+2025-05-11 18:41:34,173 - INFO - Processing track: Happen To Me by Russell Dickerson
+2025-05-11 18:41:34,417 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:34,418 - INFO - Stored metadata for Happen To Me by Russell Dickerson
+2025-05-11 18:41:35,419 - INFO - Processing track: You Had To Be There (feat. Kenny Chesney) by Megan Moroney
+2025-05-11 18:41:36,188 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:36,190 - INFO - Stored metadata for You Had To Be There (feat. Kenny Chesney) by Megan Moroney
+2025-05-11 18:41:37,196 - INFO - Processing track: After All The Bars Are Closed by Thomas Rhett
+2025-05-11 18:41:37,453 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:37,455 - INFO - Stored metadata for After All The Bars Are Closed by Thomas Rhett
+2025-05-11 18:41:38,459 - INFO - Processing track: Texas by Blake Shelton
+2025-05-11 18:41:38,992 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:38,995 - INFO - Stored metadata for Texas by Blake Shelton
+2025-05-11 18:41:39,995 - INFO - Processing track: Hangin’ On (feat. Morgan Wallen) by ERNEST
+2025-05-11 18:41:40,299 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:40,301 - INFO - Stored metadata for Hangin’ On (feat. Morgan Wallen) by ERNEST
+2025-05-11 18:41:41,306 - INFO - Processing track: Woman by Mumford & Sons
+2025-05-11 18:41:41,664 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:41,666 - INFO - Stored metadata for Woman by Mumford & Sons
+2025-05-11 18:41:42,671 - INFO - Processing track: Feels Like a Sunday by Elderbrook
+2025-05-11 18:41:43,016 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:43,021 - INFO - Stored metadata for Feels Like a Sunday by Elderbrook
+2025-05-11 18:41:44,025 - INFO - Processing track: Shout by Tears For Fears
+2025-05-11 18:41:44,462 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:44,464 - INFO - Stored metadata for Shout by Tears For Fears
+2025-05-11 18:41:45,464 - INFO - Processing track: Give It Up by KC & The Sunshine Band
+2025-05-11 18:41:45,773 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:45,774 - INFO - Stored metadata for Give It Up by KC & The Sunshine Band
+2025-05-11 18:41:46,776 - INFO - Processing track: Could You Be Loved by Bob Marley & The Wailers
+2025-05-11 18:41:47,129 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:47,131 - INFO - Stored metadata for Could You Be Loved by Bob Marley & The Wailers
+2025-05-11 18:41:48,136 - INFO - Processing track: I'm Gonna Be (500 Miles) by The Proclaimers
+2025-05-11 18:41:48,472 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:48,473 - INFO - Stored metadata for I'm Gonna Be (500 Miles) by The Proclaimers
+2025-05-11 18:41:49,474 - INFO - Processing track: Don't You (Forget About Me) by Simple Minds
+2025-05-11 18:41:49,836 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:49,837 - INFO - Stored metadata for Don't You (Forget About Me) by Simple Minds
+2025-05-11 18:41:50,841 - INFO - Processing track: Kokomo by The Beach Boys
+2025-05-11 18:41:51,343 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:51,344 - INFO - Stored metadata for Kokomo by The Beach Boys
+2025-05-11 18:41:52,349 - INFO - Processing track: Come On Eileen by Dexys Midnight Runners
+2025-05-11 18:41:52,617 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:52,618 - INFO - Stored metadata for Come On Eileen by Dexys Midnight Runners
+2025-05-11 18:41:53,624 - INFO - Processing track: I Still Haven't Found What I'm Looking For by U2
+2025-05-11 18:41:54,324 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:54,327 - INFO - Stored metadata for I Still Haven't Found What I'm Looking For by U2
+2025-05-11 18:41:55,333 - INFO - Processing track: Summer Of '69 by Bryan Adams
+2025-05-11 18:41:55,681 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:55,683 - INFO - Stored metadata for Summer Of '69 by Bryan Adams
+2025-05-11 18:41:56,688 - INFO - Processing track: Little Lies - 2017 Remaster by Fleetwood Mac
+2025-05-11 18:41:57,146 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:57,149 - INFO - Stored metadata for Little Lies - 2017 Remaster by Fleetwood Mac
+2025-05-11 18:41:58,155 - INFO - Processing track: Dancing In the Dark by Bruce Springsteen
+2025-05-11 18:41:58,443 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:41:58,444 - INFO - Stored metadata for Dancing In the Dark by Bruce Springsteen
+2025-05-11 18:41:59,449 - INFO - Processing track: Pour Some Sugar On Me - Remastered 2017 by Def Leppard
+2025-05-11 18:42:00,050 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:00,050 - INFO - Stored metadata for Pour Some Sugar On Me - Remastered 2017 by Def Leppard
+2025-05-11 18:42:01,056 - INFO - Processing track: 9 to 5 by Dolly Parton
+2025-05-11 18:42:01,395 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:01,397 - INFO - Stored metadata for 9 to 5 by Dolly Parton
+2025-05-11 18:42:02,402 - INFO - Processing track: The Boys Of Summer - Remastered 2024 by Don Henley
+2025-05-11 18:42:02,709 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:02,711 - INFO - Stored metadata for The Boys Of Summer - Remastered 2024 by Don Henley
+2025-05-11 18:42:03,715 - INFO - Processing track: You Make My Dreams (Come True) by Daryl Hall & John Oates
+2025-05-11 18:42:04,126 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:04,128 - INFO - Stored metadata for You Make My Dreams (Come True) by Daryl Hall & John Oates
+2025-05-11 18:42:05,130 - INFO - Processing track: Girls Just Want to Have Fun by Cyndi Lauper
+2025-05-11 18:42:05,604 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:05,604 - INFO - Stored metadata for Girls Just Want to Have Fun by Cyndi Lauper
+2025-05-11 18:42:06,609 - INFO - Processing track: Jessie's Girl by Rick Springfield
+2025-05-11 18:42:07,042 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:07,044 - INFO - Stored metadata for Jessie's Girl by Rick Springfield
+2025-05-11 18:42:08,049 - INFO - Processing track: Danger Zone - From "Top Gun" Original Soundtrack by Kenny Loggins
+2025-05-11 18:42:08,536 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:08,538 - INFO - Stored metadata for Danger Zone - From "Top Gun" Original Soundtrack by Kenny Loggins
+2025-05-11 18:42:09,543 - INFO - Processing track: Old Phone by Ed Sheeran
+2025-05-11 18:42:10,165 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:10,167 - INFO - Stored metadata for Old Phone by Ed Sheeran
+2025-05-11 18:42:11,167 - INFO - Processing track: Am I Okay? by Megan Moroney
+2025-05-11 18:42:11,602 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:11,604 - INFO - Stored metadata for Am I Okay? by Megan Moroney
+2025-05-11 18:42:12,608 - INFO - Processing track: High Road (feat. Jessie Murph) by Koe Wetzel
+2025-05-11 18:42:12,904 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:12,908 - INFO - Stored metadata for High Road (feat. Jessie Murph) by Koe Wetzel
+2025-05-11 18:42:13,911 - INFO - Processing track: We Went Wild by Lord Huron
+2025-05-11 18:42:14,411 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:14,412 - INFO - Stored metadata for We Went Wild by Lord Huron
+2025-05-11 18:42:15,416 - INFO - Processing track: The Birds Are Singing At Night by Lord Huron
+2025-05-11 18:42:16,127 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:16,129 - INFO - Stored metadata for The Birds Are Singing At Night by Lord Huron
+2025-05-11 18:42:17,134 - INFO - Processing track: Fool for Love by Lord Huron
+2025-05-11 18:42:17,416 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:17,417 - INFO - Stored metadata for Fool for Love by Lord Huron
+2025-05-11 18:42:18,419 - INFO - Processing track: Son of a Gun by Lord Huron
+2025-05-11 18:42:18,740 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:18,741 - INFO - Stored metadata for Son of a Gun by Lord Huron
+2025-05-11 18:42:19,746 - INFO - Processing track: Fill Me to the Brim by Lord Huron
+2025-05-11 18:42:20,034 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:20,037 - INFO - Stored metadata for Fill Me to the Brim by Lord Huron
+2025-05-11 18:42:21,042 - INFO - Processing track: Lonesome Dreams by Lord Huron
+2025-05-11 18:42:21,394 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:21,395 - INFO - Stored metadata for Lonesome Dreams by Lord Huron
+2025-05-11 18:42:22,401 - INFO - Processing track: Your Other Life by Lord Huron
+2025-05-11 18:42:22,740 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:22,742 - INFO - Stored metadata for Your Other Life by Lord Huron
+2025-05-11 18:42:23,747 - INFO - Processing track: Not Dead Yet by Lord Huron
+2025-05-11 18:42:24,220 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:24,221 - INFO - Stored metadata for Not Dead Yet by Lord Huron
+2025-05-11 18:42:25,226 - INFO - Processing track: Tunnel of Trees by Lord Huron
+2025-05-11 18:42:25,684 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:25,687 - INFO - Stored metadata for Tunnel of Trees by Lord Huron
+2025-05-11 18:42:26,692 - INFO - Processing track: The Night We Met by Lord Huron
+2025-05-11 18:42:27,080 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:27,081 - INFO - Stored metadata for The Night We Met by Lord Huron
+2025-05-11 18:42:28,082 - INFO - Processing track: The Yawning Grave by Lord Huron
+2025-05-11 18:42:28,446 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:28,448 - INFO - Stored metadata for The Yawning Grave by Lord Huron
+2025-05-11 18:42:29,449 - INFO - Processing track: The Problem With Your Daughter by Lord Huron
+2025-05-11 18:42:29,764 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:29,767 - INFO - Stored metadata for The Problem With Your Daughter by Lord Huron
+2025-05-11 18:42:30,769 - INFO - Processing track: Looking Back by Lord Huron
+2025-05-11 18:42:31,058 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:31,059 - INFO - Stored metadata for Looking Back by Lord Huron
+2025-05-11 18:42:32,064 - INFO - Processing track: Tearing Me Up by Bob Moses
+2025-05-11 18:42:32,391 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:32,396 - INFO - Stored metadata for Tearing Me Up by Bob Moses
+2025-05-11 18:42:33,399 - INFO - Processing track: Time of Your Life by Bob Moses
+2025-05-11 18:42:33,765 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:42:33,766 - INFO - Stored metadata for Time of Your Life by Bob Moses
+2025-05-11 18:42:34,767 - INFO - Completed metadata collection. Processed 50 tracks.
+2025-05-11 18:55:24,016 - INFO - Starting metadata collection
+2025-05-11 18:55:24,274 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/tracks?select=id%2Cname%2Cartist "HTTP/2 200 OK"
+2025-05-11 18:55:24,426 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=track_id "HTTP/2 200 OK"
+2025-05-11 18:55:24,427 - INFO - Found 50 tracks needing metadata
+2025-05-11 18:55:24,427 - INFO - Collecting metadata for 50 tracks
+2025-05-11 18:55:24,427 - INFO - Processing track: Inner Light by Elderbrook
+2025-05-11 18:55:24,854 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:24,855 - INFO - Stored metadata for Inner Light by Elderbrook
+2025-05-11 18:55:25,861 - INFO - Processing track: All My Love by Elderbrook
+2025-05-11 18:55:26,337 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:26,339 - INFO - Stored metadata for All My Love by Elderbrook
+2025-05-11 18:55:27,343 - INFO - Processing track: The End by Elderbrook
+2025-05-11 18:55:27,864 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:27,866 - INFO - Stored metadata for The End by Elderbrook
+2025-05-11 18:55:28,871 - INFO - Processing track: Old Dirt Roads by Owen Riegling
+2025-05-11 18:55:29,245 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:29,247 - INFO - Stored metadata for Old Dirt Roads by Owen Riegling
+2025-05-11 18:55:30,251 - INFO - Processing track: Spin You Around by Morgan Wallen
+2025-05-11 18:55:30,664 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:30,669 - INFO - Stored metadata for Spin You Around by Morgan Wallen
+2025-05-11 18:55:31,674 - INFO - Processing track: Ordinary - Wedding Version by Alex Warren
+2025-05-11 18:55:31,987 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:31,989 - INFO - Stored metadata for Ordinary - Wedding Version by Alex Warren
+2025-05-11 18:55:32,992 - INFO - Processing track: What's Up? (feat. Lzzy Hale) by White Panda
+2025-05-11 18:55:33,346 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:33,348 - INFO - Stored metadata for What's Up? (feat. Lzzy Hale) by White Panda
+2025-05-11 18:55:34,354 - INFO - Processing track: Gold Dust - Galantis & Elgot VIP Mix by Galantis
+2025-05-11 18:55:34,622 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:34,625 - INFO - Stored metadata for Gold Dust - Galantis & Elgot VIP Mix by Galantis
+2025-05-11 18:55:35,630 - INFO - Processing track: Wild as Her by Corey Kent
+2025-05-11 18:55:35,946 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:35,948 - INFO - Stored metadata for Wild as Her by Corey Kent
+2025-05-11 18:55:36,952 - INFO - Processing track: Reel Around The Sun by Bill Whelan
+2025-05-11 18:55:37,312 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:37,314 - INFO - Stored metadata for Reel Around The Sun by Bill Whelan
+2025-05-11 18:55:38,315 - INFO - Processing track: Call It Love by Felix Jaehn
+2025-05-11 18:55:38,670 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:38,672 - INFO - Stored metadata for Call It Love by Felix Jaehn
+2025-05-11 18:55:39,677 - INFO - Processing track: Feel Good (with Daya) by Gryffin
+2025-05-11 18:55:40,038 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:40,039 - INFO - Stored metadata for Feel Good (with Daya) by Gryffin
+2025-05-11 18:55:41,044 - INFO - Processing track: Don't You (Forget About Me) by Simple Minds
+2025-05-11 18:55:41,323 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:41,327 - INFO - Stored metadata for Don't You (Forget About Me) by Simple Minds
+2025-05-11 18:55:42,328 - INFO - Processing track: Short Change Hero by The Heavy
+2025-05-11 18:55:42,954 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:42,956 - INFO - Stored metadata for Short Change Hero by The Heavy
+2025-05-11 18:55:43,961 - INFO - Processing track: Castles by Ricci Paolo
+2025-05-11 18:55:44,390 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:44,392 - INFO - Stored metadata for Castles by Ricci Paolo
+2025-05-11 18:55:45,397 - INFO - Processing track: The Way I Wanna by Max McNown
+2025-05-11 18:55:45,732 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:45,734 - INFO - Stored metadata for The Way I Wanna by Max McNown
+2025-05-11 18:55:46,735 - INFO - Processing track: Olive Tree by Quinn XCII
+2025-05-11 18:55:47,222 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:47,224 - INFO - Stored metadata for Olive Tree by Quinn XCII
+2025-05-11 18:55:48,229 - INFO - Processing track: THOSE WERE THE NIGHTS by Frankie Muriel
+2025-05-11 18:55:48,682 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:48,684 - INFO - Stored metadata for THOSE WERE THE NIGHTS by Frankie Muriel
+2025-05-11 18:55:49,689 - INFO - Processing track: Blink Twice by Shaboozey
+2025-05-11 18:55:49,992 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:49,993 - INFO - Stored metadata for Blink Twice by Shaboozey
+2025-05-11 18:55:50,998 - INFO - Processing track: On The Edge by Elijah Scott
+2025-05-11 18:55:51,320 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:51,321 - INFO - Stored metadata for On The Edge by Elijah Scott
+2025-05-11 18:55:52,326 - INFO - Processing track: Did It Anyway by ERNEST
+2025-05-11 18:55:52,617 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:52,619 - INFO - Stored metadata for Did It Anyway by ERNEST
+2025-05-11 18:55:53,622 - INFO - Processing track: The Reaper by Jonah Kagen
+2025-05-11 18:55:54,014 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:54,016 - INFO - Stored metadata for The Reaper by Jonah Kagen
+2025-05-11 18:55:55,021 - INFO - Processing track: Small Town Girls by Thomas Rhett
+2025-05-11 18:55:55,327 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:55,331 - INFO - Stored metadata for Small Town Girls by Thomas Rhett
+2025-05-11 18:55:56,336 - INFO - Processing track: what are friends for? by Avery Anna
+2025-05-11 18:55:56,613 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:56,614 - INFO - Stored metadata for what are friends for? by Avery Anna
+2025-05-11 18:55:57,619 - INFO - Processing track: Amen by Shaboozey
+2025-05-11 18:55:57,901 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:57,903 - INFO - Stored metadata for Amen by Shaboozey
+2025-05-11 18:55:58,906 - INFO - Processing track: Man of the Year by Sam Barber
+2025-05-11 18:55:59,528 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:55:59,530 - INFO - Stored metadata for Man of the Year by Sam Barber
+2025-05-11 18:56:00,535 - INFO - Processing track: Same Questions by Max McNown
+2025-05-11 18:56:02,085 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:02,086 - INFO - Stored metadata for Same Questions by Max McNown
+2025-05-11 18:56:03,091 - INFO - Processing track: Fire and Gasoline - A COLORS ENCORE by Shaboozey
+2025-05-11 18:56:03,389 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:03,391 - INFO - Stored metadata for Fire and Gasoline - A COLORS ENCORE by Shaboozey
+2025-05-11 18:56:04,396 - INFO - Processing track: Warm Night by Lord Huron
+2025-05-11 18:56:04,705 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:04,707 - INFO - Stored metadata for Warm Night by Lord Huron
+2025-05-11 18:56:05,711 - INFO - Processing track: Ace Up My Sleeve by Lord Huron
+2025-05-11 18:56:06,202 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:06,204 - INFO - Stored metadata for Ace Up My Sleeve by Lord Huron
+2025-05-11 18:56:07,209 - INFO - Processing track: Harvest Moon - Recorded at Spotify Studios NYC by Lord Huron
+2025-05-11 18:56:07,711 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:07,713 - INFO - Stored metadata for Harvest Moon - Recorded at Spotify Studios NYC by Lord Huron
+2025-05-11 18:56:08,715 - INFO - Processing track: Secret of Life by Lord Huron
+2025-05-11 18:56:09,106 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:09,110 - INFO - Stored metadata for Secret of Life by Lord Huron
+2025-05-11 18:56:10,111 - INFO - Processing track: I Will Be Back One Day by Lord Huron
+2025-05-11 18:56:10,703 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:10,705 - INFO - Stored metadata for I Will Be Back One Day by Lord Huron
+2025-05-11 18:56:11,706 - INFO - Processing track: Mine Forever by Lord Huron
+2025-05-11 18:56:12,684 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:12,686 - INFO - Stored metadata for Mine Forever by Lord Huron
+2025-05-11 18:56:13,688 - INFO - Processing track: When Will I See You Again by Lord Huron
+2025-05-11 18:56:14,081 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:14,083 - INFO - Stored metadata for When Will I See You Again by Lord Huron
+2025-05-11 18:56:15,086 - INFO - Processing track: When the Night is Over by Lord Huron
+2025-05-11 18:56:15,448 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:15,450 - INFO - Stored metadata for When the Night is Over by Lord Huron
+2025-05-11 18:56:16,454 - INFO - Processing track: Setting Sun by Lord Huron
+2025-05-11 18:56:16,803 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:16,805 - INFO - Stored metadata for Setting Sun by Lord Huron
+2025-05-11 18:56:17,810 - INFO - Processing track: Love Like Ghosts by Lord Huron
+2025-05-11 18:56:18,430 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:18,433 - INFO - Stored metadata for Love Like Ghosts by Lord Huron
+2025-05-11 18:56:19,438 - INFO - Processing track: Vide Noir by Lord Huron
+2025-05-11 18:56:19,848 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:19,849 - INFO - Stored metadata for Vide Noir by Lord Huron
+2025-05-11 18:56:20,852 - INFO - Processing track: Long Lost by Lord Huron
+2025-05-11 18:56:21,261 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:21,263 - INFO - Stored metadata for Long Lost by Lord Huron
+2025-05-11 18:56:22,264 - INFO - Processing track: She Lit a Fire by Lord Huron
+2025-05-11 18:56:22,580 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:22,582 - INFO - Stored metadata for She Lit a Fire by Lord Huron
+2025-05-11 18:56:23,586 - INFO - Processing track: Fistfight by The Ballroom Thieves
+2025-05-11 18:56:24,088 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:24,091 - INFO - Stored metadata for Fistfight by The Ballroom Thieves
+2025-05-11 18:56:25,094 - INFO - Processing track: Every Breath You Take by The Police
+2025-05-11 18:56:25,477 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:25,482 - INFO - Stored metadata for Every Breath You Take by The Police
+2025-05-11 18:56:26,486 - INFO - Processing track: Money For Nothing (Single Edit) - 2022 Remaster by Dire Straits
+2025-05-11 18:56:27,444 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:27,446 - INFO - Stored metadata for Money For Nothing (Single Edit) - 2022 Remaster by Dire Straits
+2025-05-11 18:56:28,449 - INFO - Processing track: Message In A Bottle by The Police
+2025-05-11 18:56:28,779 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:28,781 - INFO - Stored metadata for Message In A Bottle by The Police
+2025-05-11 18:56:29,786 - INFO - Processing track: Carry Me to Water by Ian Blackwood
+2025-05-11 18:56:30,159 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:30,161 - INFO - Stored metadata for Carry Me to Water by Ian Blackwood
+2025-05-11 18:56:31,167 - INFO - Processing track: Randi's Song by Ian Kieffer
+2025-05-11 18:56:32,241 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:32,243 - INFO - Stored metadata for Randi's Song by Ian Kieffer
+2025-05-11 18:56:33,247 - INFO - Processing track: The Garden Song by Adam Rodway
+2025-05-11 18:56:33,596 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:33,598 - INFO - Stored metadata for The Garden Song by Adam Rodway
+2025-05-11 18:56:34,604 - INFO - Processing track: Drink Don't Need No Mix (feat. BigXthaPlug) by Shaboozey
+2025-05-11 18:56:34,942 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:34,944 - INFO - Stored metadata for Drink Don't Need No Mix (feat. BigXthaPlug) by Shaboozey
+2025-05-11 18:56:35,947 - INFO - Processing track: No Seasons (what's the worst that could happen?) by roger weeks
+2025-05-11 18:56:36,270 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 18:56:36,271 - INFO - Stored metadata for No Seasons (what's the worst that could happen?) by roger weeks
+2025-05-11 18:56:37,277 - INFO - Completed metadata collection. Processed 50 tracks.
+2025-05-11 19:13:38,359 - INFO - Starting metadata collection
+2025-05-11 19:13:38,511 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/tracks?select=id%2Cname%2Cartist "HTTP/2 200 OK"
+2025-05-11 19:13:38,593 - INFO - HTTP Request: GET https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata?select=track_id "HTTP/2 200 OK"
+2025-05-11 19:13:38,595 - INFO - Found 49 tracks needing metadata
+2025-05-11 19:13:38,595 - INFO - Collecting metadata for 49 tracks
+2025-05-11 19:13:38,596 - INFO - Processing track: Wishing well by Henrik
+2025-05-11 19:13:40,354 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:40,359 - INFO - Stored metadata for Wishing well by Henrik
+2025-05-11 19:13:41,360 - INFO - Processing track: Turned Into Missing You by Max McNown
+2025-05-11 19:13:41,701 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:41,703 - INFO - Stored metadata for Turned Into Missing You by Max McNown
+2025-05-11 19:13:42,708 - INFO - Processing track: Hail Mary by Shaboozey
+2025-05-11 19:13:43,110 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:43,113 - INFO - Stored metadata for Hail Mary by Shaboozey
+2025-05-11 19:13:44,118 - INFO - Processing track: Down with That Boat by Chris Collins
+2025-05-11 19:13:44,601 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:44,603 - INFO - Stored metadata for Down with That Boat by Chris Collins
+2025-05-11 19:13:45,608 - INFO - Processing track: Made For More by Chris Boldt
+2025-05-11 19:13:45,905 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:45,907 - INFO - Stored metadata for Made For More by Chris Boldt
+2025-05-11 19:13:46,909 - INFO - Processing track: Carry Me to Water by Ian Blackwood
+2025-05-11 19:13:47,519 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:47,524 - INFO - Stored metadata for Carry Me to Water by Ian Blackwood
+2025-05-11 19:13:48,528 - INFO - Processing track: Randi's Song by Ian Kieffer
+2025-05-11 19:13:48,972 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:48,973 - INFO - Stored metadata for Randi's Song by Ian Kieffer
+2025-05-11 19:13:49,979 - INFO - Processing track: The Garden Song by Adam Rodway
+2025-05-11 19:13:50,279 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:50,281 - INFO - Stored metadata for The Garden Song by Adam Rodway
+2025-05-11 19:13:51,286 - INFO - Processing track: Drink Don't Need No Mix (feat. BigXthaPlug) by Shaboozey
+2025-05-11 19:13:51,534 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:51,536 - INFO - Stored metadata for Drink Don't Need No Mix (feat. BigXthaPlug) by Shaboozey
+2025-05-11 19:13:52,537 - INFO - Processing track: No Seasons (what's the worst that could happen?) by roger weeks
+2025-05-11 19:13:52,792 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:52,793 - INFO - Stored metadata for No Seasons (what's the worst that could happen?) by roger weeks
+2025-05-11 19:13:53,799 - INFO - Processing track: Hotel Bible by Max McNown
+2025-05-11 19:13:54,155 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:54,156 - INFO - Stored metadata for Hotel Bible by Max McNown
+2025-05-11 19:13:55,157 - INFO - Processing track: Want You For Life by Mackenzy Mackay
+2025-05-11 19:13:55,746 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:55,748 - INFO - Stored metadata for Want You For Life by Mackenzy Mackay
+2025-05-11 19:13:56,751 - INFO - Processing track: Where Are We Now by Moreau
+2025-05-11 19:13:57,067 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:57,069 - INFO - Stored metadata for Where Are We Now by Moreau
+2025-05-11 19:13:58,074 - INFO - Processing track: FIRST TIME by Matt Hansen
+2025-05-11 19:13:58,446 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:13:58,448 - INFO - Stored metadata for FIRST TIME by Matt Hansen
+2025-05-11 19:13:59,452 - INFO - Processing track: Fire And Gasoline by Shaboozey
+2025-05-11 19:14:00,034 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:00,037 - INFO - Stored metadata for Fire And Gasoline by Shaboozey
+2025-05-11 19:14:01,043 - INFO - Processing track: Angel Of The Road by Little Hopes
+2025-05-11 19:14:02,620 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:02,622 - INFO - Stored metadata for Angel Of The Road by Little Hopes
+2025-05-11 19:14:03,628 - INFO - Processing track: Patiently by Presence Worship
+2025-05-11 19:14:04,002 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:04,003 - INFO - Stored metadata for Patiently by Presence Worship
+2025-05-11 19:14:05,009 - INFO - Processing track: Something Sweet by Vincent Lima
+2025-05-11 19:14:05,360 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:05,362 - INFO - Stored metadata for Something Sweet by Vincent Lima
+2025-05-11 19:14:06,367 - INFO - Processing track: The Old Me by Angus Robb
+2025-05-11 19:14:06,707 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:06,709 - INFO - Stored metadata for The Old Me by Angus Robb
+2025-05-11 19:14:07,712 - INFO - Processing track: Song From Yesterday by Chance Peña
+2025-05-11 19:14:08,090 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:08,092 - INFO - Stored metadata for Song From Yesterday by Chance Peña
+2025-05-11 19:14:09,097 - INFO - Processing track: Tall Boy by Shaboozey
+2025-05-11 19:14:09,452 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:09,454 - INFO - Stored metadata for Tall Boy by Shaboozey
+2025-05-11 19:14:10,459 - INFO - Processing track: Castles by Ricci Paolo
+2025-05-11 19:14:11,050 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:11,052 - INFO - Stored metadata for Castles by Ricci Paolo
+2025-05-11 19:14:12,057 - INFO - Processing track: The Way I Wanna by Max McNown
+2025-05-11 19:14:12,477 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:12,479 - INFO - Stored metadata for The Way I Wanna by Max McNown
+2025-05-11 19:14:13,485 - INFO - Processing track: Olive Tree by Quinn XCII
+2025-05-11 19:14:13,764 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:13,765 - INFO - Stored metadata for Olive Tree by Quinn XCII
+2025-05-11 19:14:14,767 - INFO - Processing track: THOSE WERE THE NIGHTS by Frankie Muriel
+2025-05-11 19:14:15,067 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:15,069 - INFO - Stored metadata for THOSE WERE THE NIGHTS by Frankie Muriel
+2025-05-11 19:14:16,069 - INFO - Processing track: I Ain't Comin' Back (feat. Post Malone) by Morgan Wallen
+2025-05-11 19:14:16,314 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:16,315 - INFO - Stored metadata for I Ain't Comin' Back (feat. Post Malone) by Morgan Wallen
+2025-05-11 19:14:17,320 - INFO - Processing track: Blink Twice by Shaboozey
+2025-05-11 19:14:17,582 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:17,584 - INFO - Stored metadata for Blink Twice by Shaboozey
+2025-05-11 19:14:18,589 - INFO - Processing track: On The Edge by Elijah Scott
+2025-05-11 19:14:18,852 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:18,854 - INFO - Stored metadata for On The Edge by Elijah Scott
+2025-05-11 19:14:19,861 - INFO - Processing track: Did It Anyway by ERNEST
+2025-05-11 19:14:20,211 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:20,212 - INFO - Stored metadata for Did It Anyway by ERNEST
+2025-05-11 19:14:21,216 - INFO - Processing track: The Reaper by Jonah Kagen
+2025-05-11 19:14:21,565 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:21,565 - INFO - Stored metadata for The Reaper by Jonah Kagen
+2025-05-11 19:14:22,570 - INFO - Processing track: Small Town Girls by Thomas Rhett
+2025-05-11 19:14:23,010 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:23,012 - INFO - Stored metadata for Small Town Girls by Thomas Rhett
+2025-05-11 19:14:24,017 - INFO - Processing track: what are friends for? by Avery Anna
+2025-05-11 19:14:24,440 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:24,443 - INFO - Stored metadata for what are friends for? by Avery Anna
+2025-05-11 19:14:25,445 - INFO - Processing track: Amen by Shaboozey
+2025-05-11 19:14:25,785 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:25,787 - INFO - Stored metadata for Amen by Shaboozey
+2025-05-11 19:14:26,790 - INFO - Processing track: Man of the Year by Sam Barber
+2025-05-11 19:14:27,111 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:27,112 - INFO - Stored metadata for Man of the Year by Sam Barber
+2025-05-11 19:14:28,116 - INFO - Processing track: Same Questions by Max McNown
+2025-05-11 19:14:28,427 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:28,429 - INFO - Stored metadata for Same Questions by Max McNown
+2025-05-11 19:14:29,433 - INFO - Processing track: Fire and Gasoline - A COLORS ENCORE by Shaboozey
+2025-05-11 19:14:29,724 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:29,725 - INFO - Stored metadata for Fire and Gasoline - A COLORS ENCORE by Shaboozey
+2025-05-11 19:14:30,730 - INFO - Processing track: Warm Night by Lord Huron
+2025-05-11 19:14:30,984 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:30,985 - INFO - Stored metadata for Warm Night by Lord Huron
+2025-05-11 19:14:31,987 - INFO - Processing track: Ace Up My Sleeve by Lord Huron
+2025-05-11 19:14:32,288 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:32,292 - INFO - Stored metadata for Ace Up My Sleeve by Lord Huron
+2025-05-11 19:14:33,297 - INFO - Processing track: Harvest Moon - Recorded at Spotify Studios NYC by Lord Huron
+2025-05-11 19:14:33,807 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:33,809 - INFO - Stored metadata for Harvest Moon - Recorded at Spotify Studios NYC by Lord Huron
+2025-05-11 19:14:34,815 - INFO - Processing track: Secret of Life by Lord Huron
+2025-05-11 19:14:35,171 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:35,172 - INFO - Stored metadata for Secret of Life by Lord Huron
+2025-05-11 19:14:36,173 - INFO - Processing track: I Will Be Back One Day by Lord Huron
+2025-05-11 19:14:36,561 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:36,563 - INFO - Stored metadata for I Will Be Back One Day by Lord Huron
+2025-05-11 19:14:37,565 - INFO - Processing track: Mine Forever by Lord Huron
+2025-05-11 19:14:37,952 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:37,954 - INFO - Stored metadata for Mine Forever by Lord Huron
+2025-05-11 19:14:38,959 - INFO - Processing track: When Will I See You Again by Lord Huron
+2025-05-11 19:14:39,339 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:39,341 - INFO - Stored metadata for When Will I See You Again by Lord Huron
+2025-05-11 19:14:40,343 - INFO - Processing track: When the Night is Over by Lord Huron
+2025-05-11 19:14:40,648 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:40,650 - INFO - Stored metadata for When the Night is Over by Lord Huron
+2025-05-11 19:14:41,655 - INFO - Processing track: Setting Sun by Lord Huron
+2025-05-11 19:14:42,047 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:42,049 - INFO - Stored metadata for Setting Sun by Lord Huron
+2025-05-11 19:14:43,054 - INFO - Processing track: Love Like Ghosts by Lord Huron
+2025-05-11 19:14:43,398 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:43,399 - INFO - Stored metadata for Love Like Ghosts by Lord Huron
+2025-05-11 19:14:44,405 - INFO - Processing track: Vide Noir by Lord Huron
+2025-05-11 19:14:44,646 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:44,647 - INFO - Stored metadata for Vide Noir by Lord Huron
+2025-05-11 19:14:45,650 - INFO - Processing track: Long Lost by Lord Huron
+2025-05-11 19:14:46,090 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:46,095 - INFO - Stored metadata for Long Lost by Lord Huron
+2025-05-11 19:14:47,100 - INFO - Processing track: She Lit a Fire by Lord Huron
+2025-05-11 19:14:47,429 - INFO - HTTP Request: POST https://ktchbckqmtpesftpcwfp.supabase.co/rest/v1/track_metadata "HTTP/2 201 Created"
+2025-05-11 19:14:47,430 - INFO - Stored metadata for She Lit a Fire by Lord Huron
+2025-05-11 19:14:48,436 - INFO - Completed metadata collection. Processed 49 tracks.

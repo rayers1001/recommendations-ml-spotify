@@ -15,23 +15,6 @@ CREATE TABLE tracks (
     duration_ms INTEGER
 );
 
--- Audio features for each track
-CREATE TABLE track_features (
-    track_id INTEGER REFERENCES tracks(id),
-    danceability FLOAT,
-    energy FLOAT,
-    key INTEGER,
-    loudness FLOAT,
-    mode INTEGER,
-    speechiness FLOAT,
-    acousticness FLOAT,
-    instrumentalness FLOAT,
-    liveness FLOAT,
-    valence FLOAT,
-    tempo FLOAT,
-    PRIMARY KEY (track_id)
-);
-
 -- User listening history with play counts
 CREATE TABLE listening_history (
     id SERIAL PRIMARY KEY,
@@ -64,3 +47,15 @@ CREATE TABLE recommendations (
     user_feedback TEXT,  -- Optional: store user feedback (liked, skipped, etc.)
     UNIQUE(user_id, track_id)
 ); 
+
+   CREATE TABLE track_metadata (
+       id SERIAL PRIMARY KEY,
+       track_id INTEGER REFERENCES tracks(id),
+       listeners INTEGER,
+       playcount INTEGER,
+       tags TEXT[],
+       similar_tracks TEXT[],
+       wiki_summary TEXT,
+       updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+       UNIQUE(track_id)
+   );
