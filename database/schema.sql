@@ -11,7 +11,6 @@ CREATE TABLE tracks (
     spotify_id TEXT UNIQUE NOT NULL,
     name TEXT NOT NULL,
     artist TEXT NOT NULL,
-    popularity INTEGER,
     duration_ms INTEGER
 );
 
@@ -24,6 +23,19 @@ CREATE TABLE listening_history (
     first_played_at TIMESTAMP WITH TIME ZONE,
     last_played_at TIMESTAMP WITH TIME ZONE,
     CONSTRAINT listening_history_user_id_track_id_key UNIQUE (user_id, track_id)
+);
+
+-- Last.fm metadata for tracks
+CREATE TABLE track_metadata (
+    id SERIAL PRIMARY KEY,
+    track_id INTEGER REFERENCES tracks(id),
+    listeners INTEGER,
+    playcount INTEGER,
+    tags TEXT[],
+    similar_tracks TEXT[],
+    wiki_summary TEXT,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(track_id)
 );
 
 -- User feedback on recommendations
@@ -46,16 +58,4 @@ CREATE TABLE recommendations (
     is_played BOOLEAN DEFAULT FALSE,  -- Track if the user has played this recommendation
     user_feedback TEXT,  -- Optional: store user feedback (liked, skipped, etc.)
     UNIQUE(user_id, track_id)
-); 
-
-   CREATE TABLE track_metadata (
-       id SERIAL PRIMARY KEY,
-       track_id INTEGER REFERENCES tracks(id),
-       listeners INTEGER,
-       playcount INTEGER,
-       tags TEXT[],
-       similar_tracks TEXT[],
-       wiki_summary TEXT,
-       updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-       UNIQUE(track_id)
-   );
+);
